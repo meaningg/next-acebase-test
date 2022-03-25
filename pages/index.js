@@ -51,7 +51,7 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const db = new AceBase("mydb");
   const snap = await db.ref("test/text").get();
   const snapVal = snap.val();
