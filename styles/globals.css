@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 body {
-    @apply bg-zinc-100
+    @apply bg-zinc-100 dark:bg-black
+}
+.sc3::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.sc3::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+.sc3::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
